@@ -1,0 +1,100 @@
+{
+  "author": "David Addison",
+  "authorEmail": "djaddison.vcs@gmail.com",
+  "description": "Generate color text from selected layers. This is useful when creating text labels for color swatches without having to manually type them.",
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Change layer.name",
+      "identifier": "changeLayerName",
+      "script": "main.js",
+      "handler": "changeLayerName",
+      "shortcut": "command ctrl \\"
+    },
+    {
+      "name": "Change layer.name + CSS LCH",
+      "identifier": "changeLayerName_CSS_LCH",
+      "script": "main.js",
+      "handler": "changeLayerName_CSS_LCH",
+      "shortcut": "command ctrl ]"
+    },
+    {
+      "name": "CSS LCH LAB HSL[S] HSV[S]",
+      "identifier": "templateCSS_LCH_LAB_SS",
+      "script": "main.js",
+      "handler": "templateCSS_LCH_LAB_SS"
+    },
+    {
+      "name": "CSS",
+      "identifier": "templateCSS",
+      "script": "main.js",
+      "handler": "templateCSS",
+      "shortcut": "command ctrl ["
+    },
+    {
+      "name": "HEX",
+      "identifier": "templateHex",
+      "script": "main.js",
+      "handler": "templateHex"
+    },
+    {
+      "name": "HEX (Uppercase)",
+      "identifier": "templateHexUpperCase",
+      "script": "main.js",
+      "handler": "templateHexUpperCase"
+    },
+    {
+      "name": "RGB",
+      "identifier": "templateRGB",
+      "script": "main.js",
+      "handler": "templateRGB"
+    },
+    {
+      "name": "LCH",
+      "identifier": "templateLCH",
+      "script": "main.js",
+      "handler": "templateLCH"
+    },
+    {
+      "name": "LAB",
+      "identifier": "templateLAB",
+      "script": "main.js",
+      "handler": "templateLAB"
+    },
+    {
+      "name": "HSL",
+      "identifier": "templateHSL",
+      "script": "main.js",
+      "handler": "templateHSL"
+    },
+    {
+      "name": "HSV",
+      "identifier": "templateHSV",
+      "script": "main.js",
+      "handler": "templateHSV"
+    }
+  ],
+  "menu": {
+    "title": "color-to-text",
+    "items": [
+      "changeLayerName",
+      "changeLayerName_CSS_LCH",
+      "templateCSS_LCH_LAB_SS",
+      "templateCSS",
+      "templateHex",
+      "templateHexUpperCase",
+      "templateRGB",
+      "templateLCH",
+      "templateLAB",
+      "templateHSL",
+      "templateHSV"
+    ]
+  },
+  "version": "0.2.0",
+  "homepage": "https://github.com/djaddison/sketch-plugin-color-to-text",
+  "name": "sketch-plugin-color-to-text",
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com/djaddison/sketch-plugin-color-to-text/master/.appcast.xml"
+}

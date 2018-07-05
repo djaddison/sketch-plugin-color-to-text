@@ -1,0 +1,38 @@
+{
+  "name": "sketch-plugin-color-to-text",
+  "description": "Generate color text from selected layers. This is useful when creating text labels for color swatches without having to manually type them.",
+  "version": "0.2.0",
+  "license": "Apache-2.0",
+  "author": "David Addison <djaddison.vcs@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djaddison/sketch-plugin-color-to-text.git"
+  },
+  "bugs": {
+    "url": "https://github.com/djaddison/sketch-plugin-color-to-text/issues"
+  },
+  "homepage": "https://github.com/djaddison/sketch-plugin-color-to-text",
+  "engines": {
+    "sketch": ">=3.0"
+  },
+  "skpm": {
+    "name": "sketch-plugin-color-to-text",
+    "manifest": "src/manifest.json",
+    "main": "sketch-plugin-color-to-text.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ]
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.5.2"
+  },
+  "dependencies": {
+    "chroma-js": "^1.3.7"
+  }
+}
